@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Master\DBConnections\DBConnectionsModel;
+use App\Models\Master\DBConnections\DBConnectionModel;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
@@ -20,7 +20,7 @@ class CreateDbConnectionsTable extends Migration
             $table->timestamps();
         });
 
-        DBConnectionsModel::create([
+        DBConnectionModel::create([
             'connection_name' => 'mysql'
         ]);
     }

@@ -23,4 +23,9 @@ class MySQLAdminRepository implements AdminInterface
     {
         return $this->admins->getTable();
     }
+
+    public function getAllAdmins()
+    {
+        return $this->admins->all()->toArray();
+    }
 }
